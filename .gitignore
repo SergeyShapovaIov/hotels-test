@@ -1,0 +1,6 @@
+db_data/*
+
+apache_log/*
+
+.DS_Store
+.idea
