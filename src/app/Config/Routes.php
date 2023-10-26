@@ -36,6 +36,10 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'Login::loginView');
 $routes->get('/registration', 'Register::registrationView');
 
+$routes->post("/registration", "Register::index");
+$routes->post("/login", "Login::index");
+$routes->get("/users", "User::index", ['filter' => 'authFilter']);
+
 
 /*
  * --------------------------------------------------------------------
